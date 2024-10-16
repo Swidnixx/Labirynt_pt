@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: c9b4cbc0807303a418b66dc884a8e5c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -525,6 +525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2213648808478139918}
+  - component: {fileID: 1858466481775162061}
   m_Layer: 0
   m_Name: PortalA
   m_TagString: Untagged
@@ -552,6 +553,20 @@ Transform:
   - {fileID: 2213648808464519740}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858466481775162061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213648808478139919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a1b61ad62df1b48868f58e3132bc3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPortal: {fileID: 0}
+  renderer: {fileID: 0}
 --- !u!1 &2213648808582813263
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2213648808582813262}
   - component: {fileID: 2213648808582813261}
+  - component: {fileID: 7076832631423576627}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -605,6 +621,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 97.422165, z: 10}
   m_Center: {x: 0, y: 1.427193, z: -2.28726e-16}
+--- !u!114 &7076832631423576627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213648808582813263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688fa7e60a0a9654d9b21c819eab50ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPortal: {fileID: 0}
 --- !u!1 &2213648808830981602
 GameObject:
   m_ObjectHideFlags: 0
