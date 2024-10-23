@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PortalTeleport : MonoBehaviour
 {
+    [HideInInspector]
     public Transform linkedPortal;
     Transform player;
 

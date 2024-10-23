@@ -566,7 +566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedPortal: {fileID: 0}
-  renderer: {fileID: 0}
+  renderer: {fileID: 2213648806768401414}
+  teleport: {fileID: 7076832631423576627}
 --- !u!1 &2213648808582813263
 GameObject:
   m_ObjectHideFlags: 0

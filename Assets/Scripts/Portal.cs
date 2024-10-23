@@ -4,12 +4,14 @@ public class Portal : MonoBehaviour
 {
     public Portal linkedPortal;
     public MeshRenderer renderer;
+    public PortalTeleport teleport;
 
     UnityEngine.Camera camera;
     Transform playerCamera;
 
     private void Start()
     {
+        teleport.linkedPortal = linkedPortal.teleport.transform;
         camera = GetComponentInChildren<UnityEngine.Camera>();
         playerCamera = UnityEngine.Camera.main.transform;
 
