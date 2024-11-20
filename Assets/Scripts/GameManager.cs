@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,5 +91,35 @@ public class GameManager : MonoBehaviour
     {
         CancelInvoke();
         InvokeRepeating(nameof(Stopper), time, 1);
+    }
+
+    internal void UseKey(KeyColor key)
+    {
+        switch (key)
+        {
+            case KeyColor.Red:
+                redKeys--;
+                break;
+            case KeyColor.Green:
+                greenKeys--;
+                break;
+            case KeyColor.Gold:
+                goldKeys--;
+                break;
+        }
+    }
+
+    internal bool HasKey(KeyColor properKey)
+    {
+        switch (properKey)
+        {
+            case KeyColor.Red:
+                return redKeys > 0;
+            case KeyColor.Green:
+                return greenKeys > 0;
+            case KeyColor.Gold:
+                return goldKeys > 0;
+        }
+        return false;
     }
 }
