@@ -15,5 +15,10 @@ public class LevelGeneratorEditor : Editor
             LevelGenerator gen = target as LevelGenerator;
             gen.Generate();
         }
+        if (GUILayout.Button("Wyczyœæ"))
+        {
+            LevelGenerator gen = target as LevelGenerator;
+            gen.Clear();
+        }
     }
 }

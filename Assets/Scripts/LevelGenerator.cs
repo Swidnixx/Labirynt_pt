@@ -10,6 +10,14 @@ public class LevelGenerator : MonoBehaviour
 
     public float offset = 5;
 
+    public void Clear()
+    {
+        for(int i = transform.childCount - 1; i >= 0; i--)
+        {
+            DestroyImmediate(transform.GetChild(i).gameObject);
+        }
+    }
+
     public void Generate()
     {
         for(int x=0; x< map.width; x++)
