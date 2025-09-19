@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Pickup : MonoBehaviour
 {
+    public AudioClip sfx;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -15,5 +17,6 @@ public abstract class Pickup : MonoBehaviour
     protected virtual void Pick()
     {
         Destroy(gameObject);
+        SoundManager.Instance.PlaySFX(sfx);
     }
 }

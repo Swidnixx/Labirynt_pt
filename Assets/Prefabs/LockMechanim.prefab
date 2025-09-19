@@ -177,6 +177,7 @@ MonoBehaviour:
   doors:
   - {fileID: 0}
   properKey: 0
+  sfx: {fileID: 8300000, guid: aa17943a75f223142a3f25d47e248c65, type: 3}
 --- !u!95 &8588508275681089125
 Animator:
   serializedVersion: 5

@@ -7,6 +7,8 @@ public class LockMechanim : MonoBehaviour
     public DoorMechanim[] doors;
     public KeyColor properKey;
 
+    public AudioClip sfx;
+
     bool playerInRange;
     bool alreadyUnlocked;
 
@@ -58,5 +60,6 @@ public class LockMechanim : MonoBehaviour
         }
 
         GameManager.Instance.UseKey(properKey);
+        SoundManager.Instance.PlaySFX(sfx);
     }
 }
